@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ana Karen Guadalupe</title>
+    <link rel="shortcut icon" href="Images/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: darkseagreen;
+            margin: 0px;
+            padding: 0px;
+            color: black;
+        }
+
+        .imgLogo {
+            width: 650px;
+            height: 650px;
+            margin-left: 27%;
+        }
+
+        .imgWhats {
+            margin-top: 40px;
+            height: 45px;
+            width: 45px;
+            align-items: center;
+        }
+
+        .imgCorreo {
+            margin-top: 40px;
+            height: 45px;
+            width: 80px;
+            align-items: center;
+        }
+
+        .imgLinkedin {
+            margin-top: 40px;
+            height: 45px;
+            width: 45px;
+            align-items: center;
+        }
+
+        .imgHome {
+            margin-top: 10%;
+            margin-bottom: 20%;
+            height: 500px;
+            width: 300px;
+            align-items: center;
+        }
+
+        .titulocasoestudio1 {
+            margin-top: 10px;
+            font-size: 200%;
+            color: black;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .contenidocasoestudio1 {
+            margin-top: 30px;
+            margin-bottom: 0px;
+            font-size: 130%;
+            color: black;
+            text-align: right;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .titulocasoestudio2 {
+            margin-top: 20px;
+            font-size: 200%;
+            color: black;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .contenidocasoestudio2 {
+            margin-top: 30px;
+            margin-bottom: 0px;
+            font-size: 130%;
+            color: black;
+            text-align: right;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+
+        A {
+            color: deepskyblue;
+            margin-top: 10px;
+        }
+
+        .navbar-brand {
+            color: white;
+
+        }
+
+        .nav-link {
+            color: black;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .burbuja {
+            border-radius: 50%;
+            background: #fff;
+            opacity: .3;
+            position: absolute;
+            bottom: -150;
+
+            animation: burbujas 3s linear infinite;
+        }
+
+        .burbuja:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            left: 5%;
+            animation-duration: 3s;
+        }
+
+        .burbuja:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            left: 35%;
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
+
+        .burbuja:nth-child(3) {
+            width: 20px;
+            height: 20px;
+            left: 15%;
+            animation-duration: 1.5s;
+            animation-delay: 7s;
+        }
+
+        .burbuja:nth-child(4) {
+            width: 50px;
+            height: 50px;
+            left: 90%;
+            animation-duration: 6s;
+            animation-delay: 3s;
+        }
+
+        .burbuja:nth-child(5) {
+            width: 70px;
+            height: 70px;
+            left: 65%;
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
+
+        .burbuja:nth-child(6) {
+            width: 20px;
+            height: 20px;
+            left: 50%;
+            animation-duration: 4s;
+            animation-delay: 5s;
+        }
+
+        .burbuja:nth-child(7) {
+            width: 20px;
+            height: 20px;
+            left: 50%;
+            animation-duration: 4s;
+            animation-delay: 5s;
+        }
+
+        .burbuja:nth-child(8) {
+            width: 100px;
+            height: 100px;
+            left: 52%;
+            animation-duration: 5s;
+            animation-delay: 5s;
+        }
+
+        .burbuja:nth-child(9) {
+            width: 65px;
+            height: 65px;
+            left: 51%;
+            animation-duration: 3s;
+            animation-delay: 2s;
+        }
+
+        .burbuja:nth-child(10) {
+            width: 40px;
+            height: 40px;
+            left: 35%;
+            animation-duration: 3s;
+            animation-delay: 4s;
+        }
+
+        @keyframes burbujas {
+            0% {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            30% {
+                transform: translateX(30px);
+            }
+
+            50% {
+                opacity: .4;
+            }
+
+            100% {
+                bottom: 100vh;
+                opacity: 0;
+            }
+        }
+    </style>
+
+    <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+    </div>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color:white" href="#Inicio">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" style="color:white" aria-current="page" href="#Trabajos">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:white" href="#AcercaDeMi">Acerca de mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:white" href="#Contacto">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+    <div class="container-fluid">
+        <a name="Inicio"></a>
+        <img src="Images/LogoKL.jpg" style="margin-top: 100px;" class="rounded mx-auto d-block" alt="...">
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="dropdown-divider bg-light"></div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+            </div>
+            <a name="Trabajos"></a>
+            <h1 style="margin-bottom: 60px; margin-top: 40px;" class="titulocasoestudio1">Caso de estudio 1</h1>
+            <div class="col-sm">
+                <img style="width:300px" src="Images/HOME.png" class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col">
+                <img style="width:300px" src="Images/CARRITO.png" class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col">
+                <img style="width:300px" src="Images/pay.png" style="margin-top: 20px;" class="rounded mx-auto d-block"
+                    alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4 style="text-align:center" class="contenidocasoestudio1">Dado que las apps de servicio de comida se han
+                vuelto una tendencia en el mercado, la creación de una app centrada únicamente en postres es de gran
+                ayuda para los pequeños locales ya que podrán ampliar su mercado.</h4>
+            <h4 style="text-align:center" class="contenidocasoestudio1">Herramienta: Figma</h4>
+            <br>
+        </div>
+    </div>
+
+    <div class="dropdown-divider bg-light"></div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+            </div>
+            <h1 class="titulocasoestudio2">Caso de estudio 2</h1>
+            <div class="col-sm">
+                <img style="width:300px" src="Images/InicioMenu.png" style="margin-top: 20px;"
+                    class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col-sm">
+                <img style="width:300px" src="Images/Cargando.png" style="margin-top: 20px;"
+                    class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col-sm">
+                <img style="width:300px" src="Images/INICIO VIAJES.png" style="margin-top: 20px;"
+                    class="rounded mx-auto d-block" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h4 style="text-align:center" class="contenidocasoestudio2"> Viajar nunca es una mala idea, es por eso que
+                traigo este caso de estudio de una app móvil de viajes, cuenta con variedad de paquetes para todo tipo
+                de aventuras.</h4>
+            <h4 style="text-align:center; margin-bottom: 10px;" class="contenidocasoestudio1">Herramienta: Figma</h4>
+            <br>
+        </div>
+    </div>
+
+    <div class="dropdown-divider bg-light"></div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+            </div>
+            <h1 class="titulocasoestudio2">Caso de estudio 3</h1>
+            <div class="col-sm">
+                <img style="width:300px" src="Images/INICIO.png" style="margin-top: 20px;"
+                    class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col-sm">
+                <img style="width:300px" src="Images/CompletarPerfil.png" style="margin-top: 20px;"
+                    class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col-sm">
+                <img style="width:300px" src="Images/sesion.png" style="margin-top: 20px;"
+                    class="rounded mx-auto d-block" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h4 style="text-align:center" class="contenidocasoestudio2"> Viajar nunca es una mala idea, es por eso que
+                traigo este caso de estudio de una app móvil de viajes, cuenta con variedad de paquetes para todo tipo
+                de aventuras.</h4>
+            <h4 style="text-align:center; margin-bottom: 10px;" class="contenidocasoestudio1">Herramienta: Figma</h4>
+            <br>
+        </div>
+    </div>
+
+    <div class="dropdown-divider bg-light"></div>
+
+    <div class="container-fluid">
+        <a name="AcercaDeMi"></a>
+        <div class="row">
+            <div class="col-sm">
+                <img style="margin-top: 40px; margin-bottom: 20px; height: 420px; width: 400px; border-radius: 10px;"
+                    src="Images/yo.JPG" class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col align-items">
+                <h2
+                    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-top: 20px;">
+                    Acerca de mi</h2>
+                <p
+                    style="font-size:35px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                    Esta soy yo, Karen López!</p>
+                <p
+                    style="font-size:20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: justify;">
+                    Soy diseñadora web con una licenciatura en Ingeniería en Software y Sistemas Computacionales de la
+                    Universidad De La Salle Bajío</p>
+                <p
+                    style="font-size:20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: justify;">
+                    Actualmente trabajo en una escuela, creo contenido para redes sociales y realizó alguno diseños para
+                    algunos miniproyectos internos</p>
+                <p
+                    style="font-size:20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: justify;">
+                    También trabajo de forma independiente en algunos casos de estudio que son los que tengo dentro de
+                    mi portafolio, esto con la finalidad de superarme día con día dentro del campo laboral del ux/ui</p>
+                <p
+                    style="font-size:20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: justify; margin-bottom: 30px;">
+                    Probablemente no estaría de más mencionar que soy amante de la música electrónica y del reguetón, en
+                    mis tiempos libres me gusta diseñar, cantar, pasar tiempo con mi familia, leer, entre otras cosas.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid bg-dark py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a name="Contacto"></a>
+                    <h3 class="text-white">Contacto</h3>
+                    <div class="container">
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <img class="imgWhats" src="Images/whatsapp-logo.png">
+                                <h4 style="color:gray; margin-top: 10px;" class="WhatsApp"> 477 853 8444 </h4>
+                            </div>
+                            <div class="col-sm">
+                                <img class="imgCorreo" src="Images/imgCorreo.png">
+                                <h4 style="color:gray; margin-top: 10px;" class="WhatsApp"> karenlopez91931@gmail.com
+                                </h4>
+                            </div>
+                            <div class="col align-self-center">
+                                <img class="imgLinkedin" src="Images/imgLinkedin.png">
+                                <p></p>
+                                <A HREF="https://www.linkedin.com/in/karen-lopez-a98472176/">
+                                    https://www.linkedin.com/in/karen-lopez-a98472176/ </A>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
